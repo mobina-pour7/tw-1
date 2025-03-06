@@ -1,0 +1,163 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  <link href="/src/output.css" rel="stylesheet">
+</head>
+
+<body class="flex flex-col h-full">
+  <header class="shadow-md bg-linear-60 from-pink-300 via-purple-300 to-white from-20% ">
+    <div class="container mx-auto px-4">
+      <div class="flex justify-between items-center py-4">
+        <div class="text-2xl animate-spin font-bold">
+          <img src="/assests/images/8439b51bb7a19f6e65ce1064bc37c197.svg" alt="">
+        </div>
+        <!-- منو برای دسکتاپ -->
+        <nav class="hidden md:flex space-x-6">
+          <a href="#" class="text-gray-700 hover:text-gray-800">خانه</a>
+          <details class="relative group">
+            <summary>
+              خدمات
+            </summary>
+            <div class="absolute bg-white shadow-md mt-2 py-2 w-48 rounded-lg">
+              <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">خدمات 1</a>
+              <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">خدمات 2</a>
+              <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">خدمات 3</a>
+
+            </div>
+          </details>
+          <a href="#" class="text-gray-700 hover:text-gray-900">درباره ما</a>
+          <a href="#" class="text-gray-700 hover:text-gray-900">تماس با ما</a>
+        </nav>
+        <!-- منو برای موبایل -->
+        <details class="md:hidden">
+          <summary class="text-gray-700  hover:text-gray-900 list-none cursor-pointer">
+            <hr class="w-6 border-2 border-amber-700 rotate-180 mt-1">
+            <hr class="w-6 border-2 border-amber-700 rotate-180 mt-1">
+            <hr class="w-6 border-2 border-amber-700 rotate-180 mt-1">
+          </summary>
+          <div class="absolute z-10 bg-white shadow-md mt-2 py-2 w-full left-0 right-0">
+            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">خانه</a>
+            <details class="relative">
+              <summary class="block px-4 py-2 text-gray-700 hover:bg-gray-100 list-none cursor-pointer">
+                خدمات
+
+                <span class="text-[15px]">🔻</span>
+
+              </summary>
+
+              <div class="pl-4">
+                <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">خدمت ۱</a>
+                <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">خدمت ۲</a>
+                <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">خدمت ۳</a>
+              </div>
+            </details>
+            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">درباره ما</a>
+            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">تماس با ما</a>
+          </div>
+        </details>
+      </div>
+    </div>
+  </header>
+
+  <main
+    class="text-center  p-6 flex-grow  bg-center bg-cover bg-amber-50 bg-[url(/assets/img/04.jpg)]  mix-blend-overlay bg-opacity-100">
+    <h1 class="text-2xl text-pink-800 font-bold">Eiffel Tower </h1>
+
+
+    <label for="checkbox1"
+      class="block bg-purple-300 mt-4 p-3 group block  border border-2  rounded-2xl overflow-hidden text-left pl-2 font-bold">
+      Structures in France taller than the Eiffel Tower
+      <input id="checkbox1" type="checkbox" class="peer">
+      <ul
+        class="list-group bg-purple-200  px-4  transition-all transition-discrete  overflow-hidden h-0  peer-checked:h-50 peer-checked:py-4 ">
+        <li class="list-group-item w-60">Longwave transmitter Allouis</li>
+        <li class="list-group-item w-60">HWU transmitter</li>
+        <li class="list-group-item w-60">Viaduc de Millau</li>
+        <li class="list-group-item w-60">Transmitter Le Mans-Mayet</li>
+      </ul>
+    </label>
+    <section tabindex="1"
+      class="bg-red-200 block  mt-4 p-3  border border-2 rounded-2xl group overflow-hidden text-left pl-2 font-bold"> Lattice towers taller than the Eiffel Tower
+
+      <ul
+        class="list-group bg-red-200  px-4  transition-all  overflow-hidden h-0  group-active:h-50 peer-checked:py-4 ">
+        <li class=" w-50">محتوای تستی1</li>
+        <li class="w-50">محتوای تستی2</li>
+        <li class=" w-50">محتوای تستی3</li>
+        <li class=" w-50">محتوای تستی4</li>
+        <li class="w-50">محتوای تستی5</li>
+      </ul>
+    </section>
+    <br><br>
+    <section class="p-4">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+
+        <!-- تصویر 1 -->
+        <div class="relative overflow-hidden rounded-lg">
+          <img
+            src="/assests/images/a-beautiful-picture-of-the-eiffel-tower-in-paris-the-capital-of-france-with-a-wonderful-background-in-wonderful-natural-colors-photo.jpg"
+            alt="تصویر ۳" class="w-full h-full object-cover" />
+          <div class="absolute inset-0 group bg-black opacity-50 hover:opacity-10 transition duration-300">
+            <p
+              class="text-white text-center opacity-0 group-hover:opacity-100 group-hover:text-amber-300 mt-4    duration-300">
+              توضیحات تصویر ۳
+            </p>
+          </div>
+        </div>
+        <!-- تصویر 2 -->
+        <div class="relative overflow-hidden rounded-lg">
+          <img
+            src="/assests/images/a-beautiful-picture-of-the-eiffel-tower-in-paris-the-capital-of-france-with-a-wonderful-background-in-wonderful-natural-colors-photo.jpg"
+            alt="تصویر ۳" class="w-full h-full object-cover" />
+          <div class="absolute inset-0 group bg-black opacity-50 hover:opacity-10 transition duration-300">
+            <p
+              class="text-white text-center opacity-0 group-hover:opacity-100 group-hover:text-amber-300 mt-4    duration-300">
+              توضیحات تصویر ۳
+            </p>
+          </div>
+        </div>
+        <!-- تصویر 3 -->
+        <div class="relative overflow-hidden rounded-lg">
+          <img src="/assests/images/a-beautiful-picture-of-the-eiffel-tower-in-paris-the-capital-of-france-with-a-wonderful-background-in-wonderful-natural-colors-photo.jpg" alt="تصویر ۳" class="w-full h-full object-cover" />
+          <div class="absolute inset-0 group bg-black opacity-50 hover:opacity-10 transition duration-300">
+            <p
+              class="text-white text-center opacity-0 group-hover:opacity-100 group-hover:text-amber-300 mt-4    duration-300">
+              توضیحات تصویر ۳
+            </p>
+          </div>
+        </div>
+        <!-- تصویر 4 -->
+        <a  id="pic" href="#pic" class="relative overflow-hidden rounded-lg">
+          <img
+            src="/assests/images/a-beautiful-picture-of-the-eiffel-tower-in-paris-the-capital-of-france-with-a-wonderful-background-in-wonderful-natural-colors-photo.jpg"
+            alt="تصویر ۳" class="w-full h-full object-cover" />
+          <div class="absolute inset-0 group bg-black opacity-50 hover:opacity-10 transition duration-300">
+            <p
+              class="text-white text-center opacity-0 group-hover:opacity-100 group-hover:text-pink-400 mt-4    duration-300">
+              توضیحات تصویر ۳
+            </p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <a href="text">click</a>
+    <a id="text" href="#" class="hidden target:block">cc</a>
+  </main>
+  <footer class="bg-purple-300 text-blue-900 p-6 text-center">
+    <div class="container mx-auto px-6">
+      <div class="flex justify-center items-center py-4">
+    <div class="w-30 h-14 hover:scale-110 transition-transform duration-300">
+      <img src="/assests/images/OnlyFans.png" alt="">
+    </div>
+  </footer>
+</body>
+</html>
+</details>
+</header>
+</body>
+</html>
