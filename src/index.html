@@ -128,17 +128,32 @@
             </p>
           </div>
         </div>
-        <!-- تصویر 4 -->
-        <a  id="pic" href="#pic" class="relative overflow-hidden rounded-lg">
-          <img
-            src="/assests/images/a-beautiful-picture-of-the-eiffel-tower-in-paris-the-capital-of-france-with-a-wonderful-background-in-wonderful-natural-colors-photo.jpg"
-            alt="تصویر ۳" class="w-full h-full object-cover" />
-          <div class="absolute inset-0 group bg-black opacity-50 hover:opacity-10 transition duration-300">
-            <p
-              class="text-white text-center opacity-0 group-hover:opacity-100 group-hover:text-pink-400 mt-4    duration-300">
-              توضیحات تصویر ۳
-            </p>
+      
+        <section class="p-4 mt-12">
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+    
+    
+            <!-- تصویر ۳ -->
+            <a id="pigGallery" href="#picBox" class="relative overflow-hidden rounded-lg">
+              <img src="/assests/images/a-beautiful-picture-of-the-eiffel-tower-in-paris-the-capital-of-france-with-a-wonderful-background-in-wonderful-natural-colors-photo.jpg" alt="تصویر ۳" class="w-full h-full object-cover" />
+              <div class="absolute inset-0 group bg-black opacity-50 hover:opacity-10 transition duration-300">
+                <p class="text-white text-center opacity-0 group-hover:opacity-100 group-hover:text-amber-300 mt-4    duration-300">
+                  توضیحات تصویر ۳
+                </p>
+              </div>
+            </a>
+    
           </div>
+        </section>
+  
+        <div id="picBox" class="absolute  transition-all duration-700 bg-opacity-50  opacity-0 invisible  target:visible flex target:opacity-100 flex-col justify-center items-center w-full md:w-[40%] py-16 bg-pink-100 bottom-30 left-0 right-0 m-auto rounded-2xl">
+          <img src="/assests/images/a-beautiful-picture-of-the-eiffel-tower-in-paris-the-capital-of-france-with-a-wonderful-background-in-wonderful-natural-colors-photo.jpg" alt="">
+          
+  
+          <a href="#pigGallery" class="bg-purple-500 rounded-full  p-1 text-2xl border-pink-400  border-4">✨</a>
+  
+        </div>
+    
         </a>
       </div>
     </section>
@@ -146,11 +161,11 @@
     <a href="text">click</a>
     <a id="text" href="#" class="hidden target:block">cc</a>
   </main>
-  <footer class="bg-purple-300 text-blue-900 p-6 text-center">
-    <div class="container mx-auto px-6">
+  <footer class= "bg-purple-300 relative top-20 text-blue-900 p-6 text-center">
+    <div class=" container mx-auto px-2 ">
       <div class="flex justify-center items-center py-4">
-    <div class="w-30 h-14 hover:scale-110 transition-transform duration-300 ">
-      <img src="/assests/images/OnlyFans.png" alt="">
+    <div class="w-30 h-7 hover:scale-110 transition-transform duration-300 ">
+      <img class="relative bottom-7" src="/assests/images/OnlyFans.png" alt="">
     </div>
   </footer>
 </body>
