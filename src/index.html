@@ -1,6 +1,5 @@
 <!doctype html>
 <html>
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,7 +22,7 @@
               <summary class= "text-cyan-950  hover:text-gray-900  cursor-pointer">
                 خدمات
               </summary>
-              <div class="absolute w-[100px] h-[200px] bg-pink-200 shadow-md mt-2 py-2 w-48  rounded-lg">
+              <div class="absolute w-[100px] h-[200px] bg-pink-200 shadow-md mt-2 py-2 w-48 rounded-lg">
                 <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">خدمت ۱</a>
                 <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">خدمت ۲</a>
                 <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">خدمت ۳</a>
@@ -33,32 +32,32 @@
             <a href="#" class="text-gray-700 hover:text-gray-900">تماس با ما</a>
             </nav>
         <!-- منو برای موبایل -->
-        <details class="md:hidden">
-          <summary class="text-gray-700  hover:text-gray-900 list-none cursor-pointer">
+        <div class="md:hidden ">
+          <div tabindex="1" class="text-gray-700  hover:text-gray-900 list-none cursor-pointer peer">
             <hr class="w-6 border-2 border-amber-700 rotate-180 mt-1">
             <hr class="w-6 border-2 border-amber-700 rotate-180 mt-1">
             <hr class="w-6 border-2 border-amber-700 rotate-180 mt-1">
-          </summary>
-          <div class="absolute z-10 bg-white shadow-md mt-2 py-2 w-full left-0 right-0">
+          </div>
+          <div class="absolute z-10 bg-white shadow-md mt-2 py-2 h-0 left-0 transition-all duration-500 right-0 w-52 peer-focus:h-full overflow-hidden">
             <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">خانه</a>
-            <details class="relative">
-              <summary class="block px-4 py-2 text-gray-700 hover:bg-gray-100 list-none cursor-pointer">
+            <div class="relative">
+              <div class="block px-4 py-2 text-gray-700 hover:bg-gray-100 list-none cursor-pointer peer">
                 خدمات
 
                 <span class="text-[15px]">🔻</span>
 
-              </summary>
+              </div>
 
               <div class="pl-4">
                 <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">خدمت ۱</a>
                 <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">خدمت ۲</a>
                 <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">خدمت ۳</a>
               </div>
-            </details>
+            </div>
             <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">درباره ما</a>
             <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">تماس با ما</a>
           </div>
-        </details>
+        </div>
       </div>
     </div>
   </header>
